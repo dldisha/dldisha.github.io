@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+<!--Has styling for slideshow  -->
+    <style>
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: -60px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: -38px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Disha Lamba</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+   
+    <!-- Custom styles for this template -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation  Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class=" js-scroll-trigger" href="vendor/Disha_resume.pdf">Download Resume</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#exp">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#edu">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skill">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+    <div class="container">
+          <img class="rounded-circle img-fluid mb-5 d-block mx-auto" src="img/me2.jpg" alt="" width="316">
+    <div class="intro-lead-in">Hey, I'm</div>
+          <div class="intro-heading ">Disha Lamba</div><p>Web Developer playing with Gems and Components</p>
+    </div>
+   </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase ">About</h2>
+            <center><div class="sm-line"></div></center><br>
+          </div>
+        </div>
+     <p class="about">A person with a habit of making things easy and interesting. I can learn different techniques, skills and try to acquire some habits of them which makes me very comfortable to be part of any team.
+    I have experience in Web Development with a demonstrated history of working in the industry.
+    Previously, I have worked with inDDev as a Software Development Engineer Intern.
+    Also, I have been involved with different societies in my institution like Association for Computing Machinery(ACM).
+    <br><br>
+    My Objective is to work on a challenging job profile which provides me an opportunity to enhance my technical skills and become a successful software engineer. Also, I am a big fan of Open Source :p  </p>
+      </div>
+    </section>
+    <!-- End About -->
+
+   
+
+    <!-- Experince -->
+    <section class="bg-light" id="exp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase title">Experience</h2>
+             <center><div class="sm-line"></div></center><br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+               <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/inddev.jpeg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>June 2019 - July 2019</h5>
+                    <h5 class="subheading">inDDev</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">inDDev was born out of the idea that a lot of people have amazing ideas, yet struggle to make it translate to reality. Hence, I worked towards the same objective by being hired as <b>Software Development Intern</b>. <br> Here I developed a dynamic <i>Content Management System</i> using Ruby on Rails and assisted in managing <i>database operations</i> in PostgreSQL. </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/internity2.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>December 2018 - February 2019</h5>
+                    <h5 class="subheading">Internity Foundation</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Worked in as a <b>Web Developemnt Mentor</b> in <a href="http://internity.in/" target="_blank">Internity Foundation.</a> My role was to mentor students to develop various skills for web development - HTML/CSS, Bootstrap, JavaScript 
+, Reviewed various GitHub pull requests and helped students with their projects and conducted various cloud call sessions for assisting the students with a query regarding web-development.
+</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/acm.jpeg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>September 2018 - May 2019</h5>
+                    <h5 class="subheading">Association for Computing Machinery(ACM)</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Designated as <b>Web Executive of ACMBVP</b>, my role was to conduct various workshops for students associated with our college society in HTML/CSS, JavaScript and Git Workshops.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/ninja.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>June 2018 - August 2018</h5>
+                    <h5 class="subheading">Training at Coding Ninjas</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I have learned Full Stack Web Development with Ruby on Rails and build several projects with RoR.</p>
+                  </div>
+                </div>
+              </li>
+               <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/ninja.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>January 2018 - May 2018</h5>
+                    <h5 class="subheading">Training at Coding Ninjas</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">In this time period I have learend C++ Foundation with Data Structures and successfully completed all the assignments and was ranked among top 10.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/exp/vbros2.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>December 2017 - January 2018</h5>
+                    <h5 class="subheading">Internship Trainee at VBROS Auto Pvt Ltd</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">At <a href="http://www.vbrosauto.com/" target="_blank">Vbros Auto Pvt Ltd.</a>I have worked in the IT department, where I worked with the software team to implement a database software using C# and MySQL.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Experience -->
+
+    <!-- Education -->
+    <section id="edu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase title">Education</h2>
+             <center><div class="sm-line"></div></center><br><br>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/education/bvp.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>2016 - Present</h5>
+                    <h5 class="subheading">Bharati Vidyapeeth College of Engineering (BVCOE),New Delhi</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Currently, I am pursuing BTECH in Information Technology from BVP Delhi(affiliated to GGSIPU).</p>
+                    
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/education/amity.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h5>2007 - 2016</h5>
+                    <h5 class="subheading">Amity International School, Sector-46, Gurugram</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Attended my Higher and Secondary School from AIS-46</p>
+                  </div>
+                </div>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Education -->
+
+    <!-- Skills -->
+    <section id="skill" class="bg-light skills">
+    <div class="container">
+     <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase title">Skill Set</h2>
+             <center><div class="sm-line"></div></center><br><br>
+<center>
+  
+  <div class="wrapper">
+  <div class="box wrap-o">
+        <i class="fas fa-desktop fa-2x" style="color:#FCAE24"></i>
+        <div class="sm-wrap">
+          <h5>Frontend</h5>
+           <p class="sd text-muted">HTML5, CSS3, Bulma and SASS</p>
+        </div>
+      </div>
+        <div class="box wrap-o">
+        <i class="fas fa-mug-hot fa-2x" style="color:#FCAE24"></i>
+
+        <div class="sm-wrap">
+          <h5>Scripting</h5>
+           <p class="sd text-muted">C/C++, Ruby, Python .</p>
+        </div>
+      </div>
+  <div class="box wrap-o">
+        <i class="fas fa-fire fa-2x" style="color:#FCAE24"></i>
+        <div class="sm-wrap">
+          <h5>Frameworks</h5>
+           <p class="sd text-muted">Ruby on Rails, Flask, JQuery </p>
+        </div>
+      </div>
+  <div class="box wrap-o">
+        <i class="fas fa-database fa-2x" style="color:#FCAE24"></i>
+        <div class="sm-wrap">
+          <h5>Database</h5>
+           <p class="sd text-muted">MySQL and PostgreSQL.</p>
+        </div>
+      </div>
+
+       
+
+</div>      
+    </div>
+</div>
+</center>
+</div>
+    </section>
+    <!-- End Skills -->
+
+     <!-- Projects -->
+    <!--  <section id="portfolio">
+      <div class="container">
+         <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase title">Projects</h2>
+            <center><div class="sm-line"></div></center><br>
+
+          </div>
+        <div class="row">
+        
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/momentum.png" alt="" width="400" height="400">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Momentum</h4>
+              <p class="text-muted">Personal</p>
+            </div>
+          </div>
+
+         <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/createathon.png" alt="" width="400" height="100">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Create-a-thon</h4>
+              <p class="text-muted">Internity Foundation</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/internity_website.png" alt="" width="400" height="100">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Internity Website</h4>
+              <p class="text-muted">Internity Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Project 1 -->
+   <!-- <!--  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                 Project Details -->
+    <!--               <h3 class="text-uppercase">Internity Website</h3>
+                 
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/internity_website.png" alt="" width="500" height="600">
+                  <p>Developing the current Internity Founation website UI/UX and building different event pages.</p>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Project 2 -->
+<!--     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                   Project Details-->
+           <!--        <h3 class="text-uppercase">Create-a-Thon</h3>
+                 
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/createathon.png" alt="" width="500" height="600">
+                  <p>Create-A-Thon is India’s first remotely interactive hackathon which is conducted by Internity Foundation. Our team is buiding this event page and currently it's on
+                    
+                   <b> <a href="https://createathon.herokuapp.com/" target="_blank">testing</a></b>.
+                </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- Project 3 -->
+   <!--  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  Project Details
+                  <h3 class="text-uppercase">Momentum-Ecommerce Website</h3>
+                  <b><p class="item-intro text-muted"><a href="https://github.com/dldisha/Ecommerce" target="_blank">GitHub</a></p></b>
+                
+                 <div class="slideshow-container"> -->
+<!-- Slideshow -->
+<!-- <div class="mySlides">
+  <div class="numbertext">1 / 5</div>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/momentum.png" width="500" height="600">
+  <div class="text">Home page</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 5</div>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/momentum5.png" width="500" height="600">
+  <div class="text">Sell a product</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 5</div>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/momentum3.png" width="500" height="600">
+  <div class="text">Advanced Search</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 5</div>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/momentum4.png" width="500" height="600">
+  <div class="text">Search Results</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 5</div>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/momentum2.png" width="500" height="600">
+  <div class="text">Chat with the seller</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+                  
+      <p>Momentum is an E-commerce website build with Ruby on Rails framework. Momentum allows user to sell or buy a product, also we have personal chat rooms, for each user to talk to the seller.
+      <br>
+      Basic functionalities like Rattings, Add to cart, Advanced Search, Edit etc are also available.</p>
+             
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Project -->
+  
+   <!-- Footer -->
+    <footer id="contact">
+     <p class="last">I'm Indian-bred<br>
+                    Wander from coast to coast<br>
+                    and Welcome bribes in the form of Coffee
+                  </p>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/dldisha">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/dldisha?s=08">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/disha.lamba721">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/dldisha/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:dldisha929@gmail.com">
+                <i class="far fa-paper-plane"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="last">&#169 dldisha | Made with <i class="fas fa-heart" style="color:#b30000"></i> &nbspin India</p>
+          </div>
+         </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.min.js"></script>
+
+<!-- Script for slideshow in the project -->
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </body>
+
+  </html>
