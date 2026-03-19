@@ -3,6 +3,85 @@
 
   <head>
 
+<!--Has styling for slideshow  -->
+    <style>
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: -60px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: -38px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
 <!-- Favicon -->
 <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
    
@@ -16,12 +95,14 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
    
+    <!-- Custom styles for this template -->
     <link href="css/style.min.css" rel="stylesheet">
 
   </head>
@@ -96,12 +177,13 @@
 
 
 
-<p>👥You can get in touch with me using <a href="/cdn-cgi/l/email-protection#a1cbc38fc5c8d2c9c0cdc0ccc3c0e1c6ccc0c8cd8fc2cecc" rel="noopener noreferrer">email</a>, checkout some of my projects on <a href="https://github.com/dldisha" rel="noopener noreferrer">GitHub</a>, 
+<p>👥You can get in touch with me using <a href="mailto:jb.dishalamba@gmail.com" rel="noopener noreferrer">email</a>, checkout some of my projects on <a href="https://github.com/dldisha" rel="noopener noreferrer">GitHub</a>, 
 connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener noreferrer">LinkedIn</a>, or read my <a href="vendor/DishaLamba_Resume.pdf" rel="noopener noreferrer" >resume</a>.</p>
       </div>
     </section>
     <!-- End About -->
 
+   
 
     <!-- Experince -->
     <section class="bg-light" id="exp">
@@ -195,12 +277,29 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
             </div>
           </div>
 
-<div class="talks-grid">
+<style>
+  .talks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+  .talk-card { background: #f4f4f2; border: 0.5px solid #e0ddd8; border-radius: 10px; overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+  .talk-card:hover { border-color: rgba(252,174,36,0.6); box-shadow: 0 4px 16px rgba(252,174,36,0.1); }
+  .card-top { background: #fff; border-bottom: 0.5px solid #e8e5e0; padding: 1.2rem 1.4rem; display: flex; align-items: center; gap: 14px; }
+  .conf-logo { width: 56px; height: 56px; border-radius: 50%; border: 2px solid rgba(252,174,36,0.4); overflow: hidden; flex-shrink: 0; }
+  .conf-logo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .card-venue { font-size: 11px; color: #FCAE24; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+  .card-title { font-size: 16px; font-weight: 800; color: #1a1a1a; line-height: 1.3; margin-top: 3px; }
+  .card-body { padding: 1rem 1.4rem 1.2rem; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .card-desc { font-size: 13px; color: #666; line-height: 1.65; }
+  .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 6px; }
+  .card-link a { font-size: 12.5px; color: #FCAE24; font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(252,174,36,0.35); padding-bottom: 2px; }
+  .card-tag { font-size: 11px; font-weight: 700; color: #a07010; background: rgba(252,174,36,0.12); border: 1px solid rgba(252,174,36,0.28); border-radius: 20px; padding: 2px 10px; }
+  .talk-card.soon { opacity: 0.5; border-style: dashed; }
+  @media (max-width: 560px) { .talks-grid { grid-template-columns: 1fr; } }
+</style>
 
+<div class="talks-grid">
 
      <div class="talk-card">
     <div class="card-top">
-      <div class="conf-logo"><img src="img/talk/wwc.png" alt="Women Who Code"></div>
+      <div class="conf-logo"><img src="img/talk/wwc.png" alt="Data Summit"></div>
       <div>
         <div class="card-venue">New York · June 2026</div>
         <div class="card-title">Women Who Code</div>
@@ -208,10 +307,11 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
     </div>
     <div class="card-body">
       <div class="card-desc">Updating Soon</div>
+      
     </div>
   </div>
 
-     <div class="talk-card">
+   <div class="talk-card">
     <div class="card-top">
       <div class="conf-logo"><img src="img/talk/db.jpg" alt="Data Summit"></div>
       <div>
@@ -235,9 +335,9 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
     </div>
     <div class="card-body">
       <div class="card-desc">Delivered an introductory talk on recommendation systems, and how companies leverage them to drive personalized experiences.</div>
+      
     </div>
   </div>
-
 
   <div class="talk-card soon">
     <div class="card-top">
@@ -271,7 +371,7 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
 
           <div class="talks-grid">
 
-               <div class="talk-card">
+   <div class="talk-card">
     <div class="card-top">
       <div class="conf-logo"><img src="img/education/nyu3.jpg" alt="Data Summit"></div>
       <div>
@@ -378,7 +478,16 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
         
   
 
-<!-- Skills styles moved to css/style.min.css -->
+<style>
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .skill-card { background: #f4f4f4; border: 0.5px solid #ddd; border-radius: 10px; padding: 1.1rem 1.25rem; transition: border-color 0.2s, box-shadow 0.2s; }
+  .skill-card:hover { border-color: rgba(252,174,36,0.6); box-shadow: 0 4px 16px rgba(252,174,36,0.1); }
+  .skill-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .skill-title { font-size: 20px; font-weight: 700; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 14px; color: #555; background: #fff; border: 0.5px solid #ccc; border-radius: 20px; padding: 4px 11px; transition: background 0.18s, color 0.18s; cursor: default; }
+  .tag:hover { background: rgba(252,174,36,0.12); color: #a07010; border-color: rgba(252,174,36,0.5); }
+</style>
 
 <div class="skills-grid">
   <div class="skill-card">
@@ -441,7 +550,7 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="/cdn-cgi/l/email-protection#f49e96da909d879c959895999695b49399959d98da979b99">
+                <a href="mailto:jb.dishalamba@gmail.com">
                 <i class="far fa-paper-plane"></i>
                 </a>
               </li>
@@ -456,7 +565,7 @@ connect with me on <a href="https://www.linkedin.com/in/dldisha/" rel="noopener 
     
 
     <!-- Bootstrap core JavaScript -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -490,4 +599,13 @@ function showSlides(n) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-      dots[
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </body>
+
+  </html>
